@@ -59,18 +59,29 @@
     <button class="btn" type="button" onclick="answerQuiz4(); disabled = true;">回答する</button>  
 </div>
 <div class="quiz-container">
-    <h2>第5問！</h2>
+  　<h2>第5問！</h2>
+      <div>
+        <p>武家諸法度は誰を取り締まるために通った？</p>
+      </div>
+      <form id="quiz-5">
+        <input name="answer" type="radio" value="a">武士</input>
+        <input name="answer" type="radio" value="b">町人</input>
+        <input name="answer" type="radio" value="c">大名</input>
+      </form>
+      <button class="btn" type="button" onclick="answerQuiz4(); disabled = true;">回答する</button>  
+  </div>
+<div class="quiz-container">
+    <h2>第6問！</h2>
     <div>
       <p>平清盛はどこに港を作った？</p>
     </div>
-    <form id="quiz-5">
+    <form id="quiz-6">
       <input name="answer" type="radio" value="a">江戸</input>
       <input name="answer" type="radio" value="b">薩摩</input>
       <input name="answer" type="radio" value="c">福原</input>
     </form>
     <button class="btn" type="button" onclick="answerQuiz5(); disabled = true;">回答する</button>  
-
-  <div id="score-container">
+    <div id="score-container">
     <p id="score-message"></p>
   </div>
   <button class="btn-score" type="button" onclick="showScore(); disabled = true;">合計得点を見る</button>
