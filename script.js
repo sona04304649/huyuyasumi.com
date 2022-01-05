@@ -5,9 +5,9 @@ function showScore(){
     
     if(score == 5) {
         totalScore.innerHTML = score + "点：満点！おめでとう！"
-    } else if(score === 4) {
+    } else if(score == 4) {
         totalScore.innerHTML = score + "点：あともう一息！";
-    } else if(score === 3) {
+    } else if(score == 3) {
         totalScore.innerHTML = score + "点：まあまあ";
     } else {
         totalScore.innerHTML = score + "点：残念";
