@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" />
+<script src="script.js"></script>
+<title>松田奏南　自由研究</title>
+</head>
+<body>
+<div class="quizzes-container">
+  <h1>社会のクイズ総集編！</h1>
+  <p>注意：「回答する」は、よく考えて押してください。　　　　一度押すと次は押せません。</p>
+  <div class="quiz-container"></div>
+  <div class="quiz-container">
+    <h2>第1問！</h2>
+    <div>
+      <p>枕草子の作者はだれ？</p>
+    </div>
+    <form id="quiz-1">
+      <input name="answer" type="radio" value="a">紫式部</input>
+      <input name="answer" type="radio" value="b">清少納言</input>
+      <input name="answer" type="radio" value="c">小野小町</input>
+    </form>
+    <button class="btn" type="button" onclick="answerQuiz1(); disabled = true;">回答する</button>
+  </div>
+  <div class="quiz-container">
+    <h2>第2問！</h2>
+    <div>
+      <p>聖徳太子が制定した十七条の憲法野中の第１５条の内容として正しいのは次のうちどれ？</p>
+    </div>
+    <form id="quiz-2">
+      <input name="answer" type="radio" value="a">自分の利益ではなく、国のことをよく考えなさい。</input>
+      <p><input  name="answer" type="radio" value="b">争いをやめ、みんなで協力しなさい。</input></br>
+      <p><input name="answer" type="radio" value="c"></input>悪をこらしめ、善をすすめなさい。</br>
+    </form>
+    <button class="btn" type="button" onclick="answerQuiz2(); disabled = true;">回答する</button>
+  </div>
+  <div class="quiz-container">
+    <h2>第3問！</h2>
+    <div>
+      <p>鎌倉幕府はどうして滅亡した？</p>
+    </div>
+    <form id="quiz-3">
+      <input name="answer" type="radio" value="a">源頼朝が死亡したから</input>
+      <p><input name="answer" type="radio" value="b">やめたかったから</input></br>
+      <p><input name="answer" type="radio" value="c">御恩と奉公の関係が崩れたから</input></br>
+    </form>
+    <button class="btn" type="button" onclick="answerQuiz2(); disabled = true;">回答する</button>  
+</div>
+<div class="quiz-container">
+　<h2>第4問！</h2>
+    <div>
+      <p>歴史上最大の一揆</p>
+    </div>
+    <form id="quiz-4">
+      <input name="answer" type="radio" value="a">島原・浅草一揆</input>
+      <input name="answer" type="radio" value="b">百姓一揆</input>
+      <input name="answer" type="radio" value="c">応仁の乱</input>
+    </form>
+    <button class="btn" type="button" onclick="answerQuiz4(); disabled = true;">回答する</button>  
+</div>
+<div class="quiz-container">
+    <h2>第5問！</h2>
+    <div>
+      <p>平清盛はどこに港を作った？</p>
+    </div>
+    <form id="quiz-5">
+      <input name="answer" type="radio" value="a">江戸</input>
+      <input name="answer" type="radio" value="b">薩摩</input>
+      <input name="answer" type="radio" value="c">福原</input>
+    </form>
+    <button class="btn" type="button" onclick="answerQuiz5(); disabled = true;">回答する</button>  
+
+  <div id="score-container">
+    <p id="score-message"></p>
+  </div>
+  <button class="btn-score" type="button" onclick="showScore(); disabled = true;">合計得点を見る</button>
+
+  <div class="quiz-container"></div>
+  <p>制作：　松田奏南</br>
+  <p>企画：　松田奏南</p>
+
+</div>
+</body>
