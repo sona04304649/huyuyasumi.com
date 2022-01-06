@@ -3,11 +3,11 @@ let score = 0;
 function showScore(){
     const totalScore = document.getElementById('score-message');
     
-    if(score == 5) {
+    if(score == 6) {
         totalScore.innerHTML = score + "点：満点！おめでとう！"
-    } else if(score == 4) {
+    } else if(score == 5) {
         totalScore.innerHTML = score + "点：あともう一息！";
-    } else if(score == 3) {
+    } else if(score == 4) {
         totalScore.innerHTML = score + "点：まあまあ";
     } else {
         totalScore.innerHTML = score + "点：残念";
@@ -40,7 +40,7 @@ function answerQuiz1() {
         console.log(select);
         console.log(incorrect);
     } else {
-        alert('1問目の答えを入力してください');
+        alert('1問目の答えを入力してから押してください');
     }
     console.log('現在の点数：' + score); 
 }
@@ -61,7 +61,7 @@ function answerQuiz2(){
         console.log(select);
         console.log(incorrect);
     } else {
-        alert('2問目の答えを入力してください');
+        alert('2問目の答えを入力してから押してください');
     }
     console.log('現在の点数：' + score); 
 }
@@ -73,7 +73,7 @@ function answerQuiz3(){
     if (quiz_3.answer.value == 'a') {
         console.log(select);
         console.log(incorrect);
-    } else if (quiz_3.answer.value == 'b') {        
+    } else if (quiz_3.answer.value == 'b') {       
         console.log(select);
         console.log(incorrect);
     // 正解はC
@@ -82,7 +82,7 @@ function answerQuiz3(){
         console.log(select);
         console.log(correct);
     } else {
-        alert('3問目の答えを入力してください');
+        alert('3問目の答えを入力してから押してください');
     }
     console.log('現在の点数：' + score); 
 }
@@ -103,7 +103,7 @@ function answerQuiz4(){
         console.log(select);
         console.log(incorrect);
     } else {
-        alert('4問目の答えを入力してください');
+        alert('4問目の答えを入力してから押してください');
     }
     console.log('現在の点数：' + score); 
 }
@@ -123,7 +123,26 @@ function answerQuiz5(){
         console.log(select);
         console.log(incorrect);
     } else {
-        alert('5問目の答えを入力してください');
+        alert('5問目の答えを入力してから押してください');
+    }
+    console.log('現在の点数：' + score); 
+}
+function answerQuiz5(){
+    const quiz_6 = document.getElementById('quiz-6');
+    const select = '6問目：' + quiz_6.answer.value + 'を選択しました';
+    //正解はC
+    if (quiz_6.answer.value == 'c') {
+        score++;
+        console.log(select);
+        console.log(correct);
+    } else if (quiz_6.answer.value == 'a') {  
+        console.log(select);
+        console.log(incorrect);
+    } else if (quiz_6.answer.value == 'b') {
+        console.log(select);
+        console.log(incorrect);
+    } else {
+        alert('6問目の答えを入力してから押してください');
     }
     console.log('現在の点数：' + score); 
 }
