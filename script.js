@@ -5,8 +5,8 @@ function showScore(){
     
     if(score == 6) {
         totalScore.innerHTML = score + "点：満点！おめでとう！"
-       
-        window.location.href = 'https://sona04304649.github.io/huyuyasumi.jp/';
+
+        window.location.href('https://sona04304649.github.io/huyuyasumi.jp/')
     } else if(score == 5) {
         totalScore.innerHTML = score + "点：あともう一息！";
     } else if(score == 4) {
