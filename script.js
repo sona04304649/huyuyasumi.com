@@ -5,7 +5,7 @@ function showScore(){
     
     if(score == 6) {
         totalScore.innerHTML = score + "点：満点！おめでとう！"
-        window.open('https://sona04304649.github.io/huyuyasumi.jp/', '_blank'); // 新しいタブを開き、ページを表示
+        window.open('https://sona04304649.github.io/huyuyasumi.jp/'); // 新しいタブを開き、ページを表示
     } else if(score == 5) {
         totalScore.innerHTML = score + "点：あともう一息！";
     } else if(score == 4) {
