@@ -4,8 +4,7 @@ function showScore(){
     const totalScore = document.getElementById('score-message');
     
     if(score == 6) {
-        totalScore.innerHTML = score + "点：満点！おめでとう！"
-        window.open('https://sona04304649.github.io/huyuyasumi.jp/'); // 新しいタブを開き、ページを表示
+        totalScore.innerHTML = score + "点：満点！LEVEL1クリア！"
     } else if(score == 5) {
         totalScore.innerHTML = score + "点：あともう一息！";
     } else if(score == 4) {
@@ -128,7 +127,7 @@ function answerQuiz5(){
     }
     console.log('現在の点数：' + score); 
 }
-function answerQuiz5(){
+function answerQuiz6(){
     const quiz_6 = document.getElementById('quiz-6');
     const select = '6問目：' + quiz_6.answer.value + 'を選択しました';
     //正解はC
